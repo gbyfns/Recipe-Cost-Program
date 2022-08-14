@@ -139,6 +139,7 @@ while True:
 
         #total_costs.append(cost)
         total_price = sum(total_costs)
+        print()
         print("the total price to make " + recipe_name + " is ${:.2f}".format(total_price))
         break
 
@@ -167,9 +168,9 @@ while True:
     #amount = input("please enter an integer:")
 
 
-    #if ingredient not in recipe:
+    if ingredient not in recipe:
 
-        #continue
+        continue
 
 
     idx = ingredient_list.index(ingredient)
